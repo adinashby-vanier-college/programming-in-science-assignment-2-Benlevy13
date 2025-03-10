@@ -21,7 +21,7 @@ def cumulative_sum(arr):
         result.append(total)
     return result
 
-# Function 4: Two-Dimensional Arrays - Matrix Transpose
+# Function 4: Two-Dimensional Arrays - Matrix Transpose.
 # This function takes a 2D list (matrix) and returns its transpose.
 def transpose_matrix(matrix):
     return [list(row) for row in zip(*matrix)]
