@@ -1,7 +1,6 @@
 # Function 1: Lists - Finding the Maximum and Second Maximum in a List
 # This function takes a list of numbers as input and returns the maximum and second maximum values.
 def max_two_in_list(numbers):
-def max_two_in_list(numbers):
     unique_numbers = sorted(set(numbers), reverse=True)
     if len(unique_numbers) == 1:
         return (unique_numbers[0], None)
@@ -21,7 +20,7 @@ def cumulative_sum(arr):
         result.append(total)
     return result
 
-# Function 4: Two-Dimensional Arrays - Matrix Transpose.
+# Function 4: Two-Dimensional Arrays - Matrix Transpose
 # This function takes a 2D list (matrix) and returns its transpose.
 def transpose_matrix(matrix):
     return [list(row) for row in zip(*matrix)]
@@ -39,3 +38,4 @@ def dot_product(list1, list2):
 # This function takes two 2D lists (matrices) and returns their matrix product.
 def matrix_multiplication(matrix1, matrix2):
     return [[sum(a * b for a, b in zip(row, col)) for col in zip(*matrix2)] for row in matrix1]
+
