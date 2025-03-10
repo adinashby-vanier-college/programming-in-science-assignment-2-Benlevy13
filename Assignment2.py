@@ -1,9 +1,9 @@
 # Function 1: Lists - Finding the Maximum and Second Maximum in a List
 # This function takes a list of numbers as input and returns the maximum and second maximum values.
 def max_two_in_list(numbers):
-    if len(numbers) != 2:
-        raise ValueError("The list must contain exactly two numbers.")
-    return max(numbers)
+    if len(numbers) < 2:
+        raise ValueError("The list must contain at least two numbers.")
+    return tuple(sorted(numbers, reverse=True)[:2])
 
 # Function 2: Lists - Removing Duplicates and Sorting
 # This function takes a list of numbers and returns a sorted list with duplicates removed.
